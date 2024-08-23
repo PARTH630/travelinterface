@@ -1,0 +1,319 @@
+.footer{
+    width:100%;
+    position: relative;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.videoDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+video::after{
+    content: '';
+    position: absolute;
+    background: rgba(10, 84, 107, 0.307);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+.seeContent{
+    width: 100%;
+    height: max-content;
+    padding: 2rem initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 2rem;
+    z-index: 100;
+}
+
+.contactDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactDiv small{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+.contactDiv h2{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.inputDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin: auto;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputDiv input{
+    width: 66%;
+    padding: .5rem .6rem;
+    border-radius: 3rem;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.inputDiv input::placeholder{
+    color: white;
+}
+
+.inputDiv .btn{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    gap: .5rem;
+}
+
+.inputDiv .icon{
+    font-size: 13px;
+}
+
+.footerCard{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem 4rem;
+    gap: 2rem;
+    background: black;
+    border-radius: 1rem;
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+}
+
+.footerIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+    row-gap: 1rem;
+
+}
+
+.logo{
+    color: white;
+    font-weight: 600;
+}
+
+.icon{
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+}
+
+.footerParagraph{
+    font-size: 13px;
+    color: gray;
+}
+
+.footerSocials{
+    display: flex;
+
+}
+
+.footerSocials .icon{
+    color: white;
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
+.footerSocials .icon:hover{
+    color: orange;
+    transform: translateY(-1px);
+   
+}
+
+.logodiv{
+    display: flex;
+    align-items: center;
+}
+
+.logodiv h2{
+    color: white;
+    font-size: 25px;
+}
+
+.footerLinks{
+    display: grid;
+    justify-content: space-between;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.grouptitle{
+    display: block;
+    font-weight: 600;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.footerList{
+    font-size: 15px;
+    color: gray;
+    list-style: none;
+    transition: .3s ease-in-out;
+    row-gap: 1rem;
+}
+
+.footerList:hover{
+    color: orange;
+    transform: translateX(7px);
+
+
+}
+
+.footerDiv{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(53, 52, 52);
+    padding: .5rem 2rem;
+}
+small{
+    font-size: 10px;
+    color: white;
+}
+
+
+@media screen and(min-width:500px) {
+    
+
+    .footerDiv{
+        justify-content: space-between;
+
+    }
+    small{
+        font-size: 14px;
+        color: white;
+
+    }
+    
+}
+
+@media screen and(min-width:500px) {
+    .contactDiv{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inputDiv{
+        width: max-content;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    input{
+        width: 60%;
+    }
+    
+    .btn{
+        width: max-content;
+    }
+
+    .footerLinks{
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and(min-width:840px) {
+    .footer{
+        padding: 5rem 0;
+    }
+
+    .footerCard{
+        flex-direction: row;
+    }
+
+    .footerLinks{
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .footerCard{
+        padding: 3rem 1rem;
+    }
+    .footerParagraph{
+        font-size: 15px;
+        color: white;
+
+    }
+
+    .footerSocials{
+        column-gap: .5rem;
+    }
+
+    .footerSocials .icon{
+        color: white;
+        font-size:25px ;
+    }
+
+    .footerSocials .icon:hover{
+        color: orange;
+    }
+
+
+
+
+
+}
+
+
+
+
+

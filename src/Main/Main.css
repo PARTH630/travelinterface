@@ -1,0 +1,231 @@
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.secTitle .title{
+    position: relative;
+    width: max-content;
+    color: gray;
+    margin: 3rem 0;
+    z-index: 2;
+    font-size: 35px;
+
+}
+
+
+.seeContent{
+    display: grid;
+    justify-content: center;
+
+
+}
+
+.singleDestination{
+    height: 100%;
+    display: grid;
+    padding: 2rem;
+    place-items: center;
+    border-radius: 10px;
+    align-items: center;
+    background: gainsboro;
+    box-shadow: 0 8px 25px rgba(140,140,141,0.54) ;
+    overflow: hidden;
+    width: auto;
+}
+
+.imgDiv{
+    height:180px ;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s ease;
+}
+
+.imgDiv img:hover{
+    transform: scale(1.1);
+}
+
+.cardInfo{
+    padding: 1rem;
+}
+
+
+.destTitle{
+    color: black;
+    font-size: 1.25rem;
+
+}
+
+.container{
+    gap : .5rem;
+}
+
+.container .icon{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 1s;
+}
+
+.container .icon:hover{
+    color: #76a7cc;;
+    transform: translateY(-2px);
+    font-size: 35px;
+
+}
+
+
+.name{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.fees{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top:1.5px solid green;
+    border-bottom:1.5px solid green;
+
+}
+
+.grade{
+    color: black;
+    max-width: 100px;
+    font-size: 41px;
+}
+
+.grade small{
+    text-align: center;
+    background: #346eb2;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1px 10px;
+    font-size: 25px;
+
+}
+
+.price{
+    font-size: 2rem;
+    color: black;
+}
+.desc{
+    font-size: 13.5px;
+    color: rgb(95, 94, 94);
+    font-weight: 500;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1270b7;
+    gap: .5rem;
+}
+
+.btn .icon{
+    align-self:center ;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc p{
+    font-size: 25px;
+}
+
+
+
+
+img{
+    height: 250px;
+    width: 415px;
+}
+
+@media screen and (max-width:840px){
+    img{
+        height: 242px;
+        width: 325px;
+    }
+    
+}
+
+@media screen and (min-width:500px) {
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .title::after{
+        width: 155px !important;
+    }
+
+
+    .singleDestination{
+        height: auto;
+    }
+
+    .seeContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footerCard{
+        margin: 2px 14px;
+    }
+
+    .singleDestination{
+        margin: 2px 7px;
+    }
+
+    
+}
+
+@media screen and (min-width:840px){
+    .singleDestination{
+        height: auto;
+    }
+
+    .seeContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footerCard{
+        margin:auto;
+    }
+
+    .singleDestination{
+        display: flex;
+        width: 95%;
+    }
+
+    .destTitle{
+        margin: 11px 0px;
+    }
+}
+
+@media screen and (min-width:1235px){
+    .destTitle{
+        margin: 11px 57px;
+    }
+}
+    
+
